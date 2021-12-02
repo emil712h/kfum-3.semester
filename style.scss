@@ -1,0 +1,235 @@
+/*
+Tekst: hvid, sort eller #1d3335
+Nav og highlight: #8bc16c
+Footer: #5d4d4d
+Baggrund: #334a4c
+Highlight rød: #f02902
+*/
+* {
+    box-sizing: border-box;
+  }
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+  
+  body {
+    background-color: #334a4c;
+    margin: 0;
+  }
+  .forside {
+    position: relative;
+    padding: 0px;
+  }
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color:white;
+  }
+  .forside img { 
+    height: auto; 
+    width: 100%;
+    opacity: 0.8;
+  }
+  @media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
+  .navbar {
+    overflow: hidden;
+    background-color: #8bc16c;
+    z-index:2;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: #1d3335;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .navbar a.right {
+    float: right;
+  }
+  .navbar a:hover {
+    background-color: #ddd;
+    color: #f02902;
+  }
+  .navbar img {
+    float: right;
+    width: 50px;
+    height: auto;
+    margin: 5px 50px 0 0;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 100px;
+  }
+  
+  .caption {
+    color: white;
+    margin: 50px 0px;
+  }
+  .caption h1 {
+    font-size: 50px;
+    font-family: cursive;
+  }
+  
+  .row {
+    margin: 30px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both
+  }
+
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 5; }
+    .div2 { grid-area: 1 / 5 / 2 / 6; }
+    .div3 { grid-area: 2 / 2 / 3 / 6; }
+    .div4 { grid-area: 2 / 1 / 3 / 2; }
+ 
+  .container {
+    margin: auto;
+    height: 300px;
+    padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .container img {
+    padding: 20px;
+    height: 300px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .large-font {
+    font-size: 48px;
+  }
+  
+  .xlarge-font {
+    font-size: 64px;
+    column-span: all;
+  }
+  .text {
+    font-size: fluid;
+  }  
+  
+  .adresse {
+    column-count: 2;
+    column-gap: 60px;
+    column-rule: 3px solid #f02902;
+  }
+  
+  .card  {
+    margin: 8px;
+    background-color: #8bc16c;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .card img {
+    height: 300px;
+    width: 200px;
+  }
+  .card h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  #customers {
+    font-family: Georgia;
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: 5%;
+  }
+  
+  #customers td, #customers th {
+    border: 5px solid #5d4d4d;
+    padding: 20px;
+  }
+  
+  #customers tr {
+    background-color: white;
+  }
+  
+  #customers th {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    background-color: #8bc16c;
+    color: #1d3335;
+  }
+.table {
+  margin: 100px 0;
+}
+
+  .dotted {
+    margin: 0;
+    width: fit-content;
+  }
+  
+  .sponsor img {
+    height: 50px;
+    width: 150px;
+    float: left;
+  }
+  
+  .footer {
+    padding: 50px;
+    background: #5d4d4d;
+  }
+  .footer p{
+    color: white;
+    margin-left: 40%;
+  }
+  .footer {
+    text-decoration: none;
+    color: white;
+  }
+  .footer a:link {
+    color: #8bc16c;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  .footer a:visited {
+    color: #8bc16c;
+    background-color: transparent;
+    text-decoration: none;
+  }
